@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.zzp.MainApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.668 sec - in com.zzp.MainApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.325 s - in com.zzp.MainApplicationTests
