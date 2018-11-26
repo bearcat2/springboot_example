@@ -1,0 +1,48 @@
+{
+  "groups": [
+    {
+      "name": "threadpool",
+      "type": "com.zzp.config.TaskThreadPoolConfig",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "threadpool.core-pool-size",
+      "type": "java.lang.Integer",
+      "description": "线程池维护线程的最少数量",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    },
+    {
+      "name": "threadpool.keep-alive-seconds",
+      "type": "java.lang.Integer",
+      "description": "线程池维护线程所允许的空闲时间,默认为60s",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    },
+    {
+      "name": "threadpool.max-pool-size",
+      "type": "java.lang.Integer",
+      "description": "线程池维护线程的最大数量,默认为Integer.MAX_VALUE",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    },
+    {
+      "name": "threadpool.queue-capacity",
+      "type": "java.lang.Integer",
+      "description": "线程池所使用的缓冲队列,默认为Integer.MAX_VALUE",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    },
+    {
+      "name": "threadpool.thread-name-prefix",
+      "type": "java.lang.String",
+      "description": "设置线程名称前缀",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    },
+    {
+      "name": "threadpool.wait-for-tasks-to-complete-on-shutdown",
+      "type": "java.lang.Boolean",
+      "description": "等待所有任务结束后再关闭线程池",
+      "sourceType": "com.zzp.config.TaskThreadPoolConfig"
+    }
+  ],
+  "hints": []
+}
