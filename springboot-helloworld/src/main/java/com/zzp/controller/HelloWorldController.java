@@ -20,7 +20,6 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/helloWorld/")
 public class HelloWorldController {
 
     @Autowired
@@ -28,7 +27,7 @@ public class HelloWorldController {
 
     private Map<String, SysUser> map = new HashMap<>();
 
-    private String key = "demo";
+    private String key = "/demo";
 
     public HelloWorldController() {
         SysUser sysUser = new SysUser();
@@ -36,7 +35,7 @@ public class HelloWorldController {
         map.put(key, sysUser);
     }
 
-    @RequestMapping("hello")
+    @RequestMapping("/hello")
     public String hello() {
         try {
             double a = 1 / 0;
@@ -46,7 +45,7 @@ public class HelloWorldController {
         return "spring boot 搭建成功";
     }
 
-    @RequestMapping("asyncTask")
+    @RequestMapping("/asyncTask")
     public String asyncTask() {
         for (int i = 0; i < 60; i++) {
             this.sysUserService.asyncTask();

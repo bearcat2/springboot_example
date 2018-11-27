@@ -1,0 +1,25 @@
+spring:
+    profiles:
+        active: dev
+
+logging:
+    file: ${user.home}/logs/springboot-helloworld/application.log
+    file.max-history: 3
+    level:
+        root: info
+        com:
+            zzp: debug
+        org:
+            springframework: error
+
+mybatis:
+    mapper-locations: classpath:mybatis/mapping/**/*.xml
+    type-aliases-package: com.zzp.entity
+
+threadpool:
+    core-pool-size: 50
+    keep-alive-seconds: 120
+    max-pool-size: 100
+    queue-capacity: 1000
+    thread-name-prefix: asyncTask-
+    wait-for-tasks-to-complete-on-shutdown: true

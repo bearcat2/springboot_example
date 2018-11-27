@@ -1,11 +1,9 @@
 package com.zzp.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 
 /**
  * <p> Description: 测试spring 提供的开发者工具,实现热加载功能 </p>
@@ -18,19 +16,6 @@ import java.util.Arrays;
 @Slf4j
 @RestController
 public class DevToolsController {
-
-    @Value("${zzp.names}")
-    private String[] names;
-
-    @Value("${zzp.ages}")
-    private Integer[] ages;
-
-    @RequestMapping("/demo")
-    public String demo() {
-        log.info("names = {}", Arrays.toString(names));
-        log.info("ages = {}", Arrays.toString(ages));
-        return "demo method called";
-    }
 
     @RequestMapping("/demo1")
     public String demo1() {
