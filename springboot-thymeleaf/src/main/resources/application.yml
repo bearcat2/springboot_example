@@ -1,11 +1,11 @@
 spring:
     datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
         druid:
-            driver-class-name: com.mysql.cj.jdbc.Driver
             url: jdbc:mysql://127.0.0.1:3306/db_zzp?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT
             username: root
-            password: 123
-            type: com.alibaba.druid.pool.DruidDataSource
+            password: 123456
+            driver-class-name: com.mysql.cj.jdbc.Driver
             initial-size: 5
             min-idle: 5
             max-active: 30
@@ -18,4 +18,4 @@ spring:
             test-on-borrow: false
             test-on-return: false
             test-while-idle: true
-            filters: stat
+            filters: stat,wall

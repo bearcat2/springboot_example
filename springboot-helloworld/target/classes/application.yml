@@ -23,3 +23,4 @@ threadpool:
     queue-capacity: 1000
     thread-name-prefix: asyncTask-
     wait-for-tasks-to-complete-on-shutdown: true
+

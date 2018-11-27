@@ -1,8 +1,11 @@
 package com.zzp.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 
 /**
@@ -17,8 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevToolsController {
 
+    @Value("${zzp.demo}")
+    private List demo1;
+
     @RequestMapping("/demo1")
     public String demo1() {
+        log.info("demo1 = {}", demo1.toString());
         return "demo1 method called";
     }
 
